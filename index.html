@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <header>
+            <h2>BMI Calculator</h2>
+            <p id="para">Check your body mass index</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <input type="number" id="height" placeholder="Height in cm (e.g. 175)">
+                <button id="height_reset" class="reset-btn" title="Reset height" type="button">&#8634;</button>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="weight" placeholder="Weight in kg (e.g. 70)">
+                <button id="weight_reset" class="reset-btn" title="Reset weight" type="button">&#8634;</button>
+            </div>
+
+            <button id="button" type="button">Calculate BMI</button>
+
+            <div id="result">Your BMI will appear here</div>
+        </main>
+
+        <footer>
+            <h3>Standard Adult Categories</h3>
+            <ul>
+                <li id="undr" class="cat-under"><span>Underweight</span> <span>&lt; 18.5</span></li>
+                <li id="healthy" class="cat-healthy"><span>Healthy Weight</span> <span>18.5 – 24.9</span></li>
+                <li id="over" class="cat-over"><span>Overweight</span> <span>25.0 – 29.9</span></li>
+                <li id="obe" class="cat-obese"><span>Obesity</span> <span>30.0+</span></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
